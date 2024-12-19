@@ -2,12 +2,12 @@ import clsx from 'clsx';
 import { useState } from 'react';
 
 type ItemProps = {
-  itemId: string;
+  item: Item;
 };
 
-const Item = ({ itemId }: ItemProps) => {
+const Item = ({ item }: ItemProps) => {
   const [editing, setEditing] = useState(false);
-  const item = { id: '1', name: 'Unnamed', packed: false };
+  // const item = { id: '1', name: 'Unnamed', packed: false };
 
   return (
     <li className="flex items-center gap-2">
